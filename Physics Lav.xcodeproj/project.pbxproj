@@ -15,6 +15,8 @@
 		3104EF1A23F731560044B124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3104EF1823F731560044B124 /* LaunchScreen.storyboard */; };
 		3104EF2523F731560044B124 /* Physics_LavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104EF2423F731560044B124 /* Physics_LavTests.swift */; };
 		3104EF3023F731560044B124 /* Physics_LavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104EF2F23F731560044B124 /* Physics_LavUITests.swift */; };
+		317DCD1223FC4C2600DF5033 /* CollisionMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DCD1123FC4C2600DF5033 /* CollisionMasks.swift */; };
+		31E552C923FC447C00928678 /* NodeCentralForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E552C823FC447C00928678 /* NodeCentralForce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3104EF2B23F731560044B124 /* Physics LavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Physics LavUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3104EF2F23F731560044B124 /* Physics_LavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics_LavUITests.swift; sourceTree = "<group>"; };
 		3104EF3123F731560044B124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317DCD1123FC4C2600DF5033 /* CollisionMasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionMasks.swift; sourceTree = "<group>"; };
+		31E552C823FC447C00928678 /* NodeCentralForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeCentralForce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,11 @@
 		3104EF0C23F731520044B124 /* Physics Lav */ = {
 			isa = PBXGroup;
 			children = (
-				3104EF0D23F731520044B124 /* AppDelegate.swift */,
+				31E552CC23FC488000928678 /* Controller */,
+				31E552CB23FC487A00928678 /* View */,
+				31E552CA23FC485D00928678 /* Model */,
 				3104EF0F23F731520044B124 /* art.scnassets */,
-				3104EF1123F731520044B124 /* GameViewController.swift */,
-				3104EF1323F731520044B124 /* Main.storyboard */,
 				3104EF1623F731560044B124 /* Assets.xcassets */,
-				3104EF1823F731560044B124 /* LaunchScreen.storyboard */,
 				3104EF1B23F731560044B124 /* Info.plist */,
 			);
 			path = "Physics Lav";
@@ -126,6 +129,33 @@
 				3104EF3123F731560044B124 /* Info.plist */,
 			);
 			path = "Physics LavUITests";
+			sourceTree = "<group>";
+		};
+		31E552CA23FC485D00928678 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31E552C823FC447C00928678 /* NodeCentralForce.swift */,
+				317DCD1123FC4C2600DF5033 /* CollisionMasks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31E552CB23FC487A00928678 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3104EF1323F731520044B124 /* Main.storyboard */,
+				3104EF1823F731560044B124 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		31E552CC23FC488000928678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3104EF0D23F731520044B124 /* AppDelegate.swift */,
+				3104EF1123F731520044B124 /* GameViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +292,8 @@
 			files = (
 				3104EF1223F731520044B124 /* GameViewController.swift in Sources */,
 				3104EF0E23F731520044B124 /* AppDelegate.swift in Sources */,
+				317DCD1223FC4C2600DF5033 /* CollisionMasks.swift in Sources */,
+				31E552C923FC447C00928678 /* NodeCentralForce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
